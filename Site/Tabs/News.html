@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!--Zadaca (stilizacija HTML fajlova uz pomoc CSS-a). 
+	Rad radio: Sinisa Zoric (S1KS1)
+	Jezik Sajta: Engleski
+	Koristeni sadrzaj:
+		1. Slike: Pixabay, Google Images
+		2. Tekst: Wikipedia, MCN
+	Sva prava zadrzana S1KS1 ©.Sinisa Zoric
+-->
+
+<html lang="en">
+
+<head>
+	<title>Café Racer</title>
+	<meta charset="utf-8"/> 
+</head>
+
+<body>
+
+<nav>
+	<div class="header">
+		<div class="title"
+			<h1>Fan Site Café Racer</h1>
+		</div>
+	</div>
+
+	<div class="menu">
+		<ul>
+  			<li><a class="active" href="../Index.html">Home</a></li>
+  			<li><a href="News.html">News</a></li>
+  			<li><a href="Contact.html">Contact</a></li>
+  			<li><a href="About.html">About</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="catalog">
+
+	<article class="panel">
+		<h2 class="title1">
+			<a href="News/News1.html" style="text-decoration:none">First ride: Will electronic suspension transform Kawasaki's ZX-10R?</a>
+		</h2>
+	<p class="info">
+		<span class="date">1 May 2018</span>
+			by <span class="author">Sinisa Zoric</span>
+	</p>
+<hr>
+
+		<h2 class="title2">
+				<a href="News/News3.html" style="text-decoration:none">HUSQVARNA VITPILEN 701 (2018-on) Review</a>
+		</h2>
+	<p class="info">
+		<span class="date">2 May 2018</span>
+			by <span class="author">Sinisa Zoric</span>	
+	</p>
+<hr>
+
+		<h2 class="title3">
+			<a href="News/News2.html" style="text-decoration:none">First look: Type 11 Prototype One. The maddest Yamaha ever? And with a £68k price tag...</a>
+		</h2>
+	<p class="info">
+		<span class="date">3 May 2018</span>
+			by <span class="author">Sinisa Zoric</span>
+		</p>
+<hr>
+
+		<h2 class="title4"><a href="News/Catalog.html" style="text-decoration:none">CATALOG</a></h2>
+
+<hr>
+	</article>
+
+</div>
+
+</body>
+
+<footer>
+	<p>Images: Pixabay.com </p>
+    <p>Content: MCN.com </p>
+	<p align="center">Copyright&copy;S1ks1</p> 
+</footer>
+
+<!--CSS stilizacija u sklopu jednog fajla radi lakseg snalazenja i manje fajlova-->
+<style>
+
+a {
+	color: white;
+}
+
+h2 {
+	font-size: 80px;
+}
+
+article {
+	text-align: center;
+}
+
+footer {
+	color: white;
+}
+
+body {
+	background-color: black;
+	color:white;
+}
+
+.title1 {
+	background-image: url("News/Images/motorcycle2.jpg");
+}
+
+.title3 {
+		background-image: url("News/Images/News2-img4.jpg");
+}
+
+.home {
+	text-align: center;
+	color: white;
+}
+
+.title {
+	font-size: 80px;
+	color: white;
+}
+
+nav {
+	background-color: red;
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: red;
+}
+</style>
+
+</html>
