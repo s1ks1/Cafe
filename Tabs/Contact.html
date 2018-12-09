@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<!--Zadaca (stilizacija HTML fajlova uz pomoc CSS-a). 
+  Rad radio: Sinisa Zoric (S1KS1)
+  Jezik Sajta: Engleski
+  Koristeni sadrzaj:
+    1. Slike: Pixabay, Google Images
+    2. Tekst: Wikipedia, MCN
+  Sva prava zadrzana S1KS1 ©.Sinisa Zoric
+-->
+
+<html lang="en"> 
+
+<!--Kontakt stranica predstavlja dio svakog funkcionalnog sajta, tako je mjesto nasla i ovde. Trenutno nema funkcionalnost, nastavkom kursa trebala bi da sadrzi sve potrebno za rad-->
+
+<head>
+    <title>Café Racer</title>
+    <meta charset="utf-8"/> 
+</head>
+
+<body>
+
+<!--Zaglavlje Stranice sa Tabovima -->
+<nav>
+    <div class="header">
+        <div class="title"
+          <h1>Fan Site Café Racer</h1>
+        </div>
+    </div>
+  <div class="menu">
+    <ul>
+      <li><a class="active" href="../Index.html">Home</a></li>
+      <li><a href="News.html">News</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<h1>Contact Panel</h1> 
+<div class="container">
+  <form action="../Index.html">
+
+    <!--Polje za unos imena-->
+    <label for="firstname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <!--Polje za unos prezimena-->
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <!--Izborna kutija sa imenima drzava-->
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Austria</option>
+      <option value="usa">Belgium</option>
+      <option value="usa">Bosnia</option>
+      <option value="usa">Canada</option>
+      <option value="usa">China</option>
+      <option value="usa">Croatia</option>
+      <option value="usa">Denmark</option>
+      <option value="usa">Germany</option>
+      <option value="usa">Russia</option>
+      <option value="usa">Serbia</option>
+      <option value="usa">Swedish</option>
+      <option value="usa">Turkey</option>
+      <option value="usa">UK</option>
+      <option value="usa">US</option>
+    </select>
+
+    <!--Naziv subjekta zbog kojeg posjetilac kontaktira-->
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <!--Dugme za potvrdjivanje-->
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+    <hr>
+
+</body>
+
+<footer>
+	<p>Ask Question? </p>
+	<p align="center">Copyright&copy;S1ks1</p> 
+</footer>
+
+<!--CSS stilizacija u sklopu jednog fajla radi lakseg snalazenja i manje fajlova-->
+<style>
+
+footer {
+    color: white;
+}
+body {
+    background-color: black;
+    color: white;
+
+}
+
+.home {
+	  text-align: center;
+	  color: white;
+}
+
+.title {
+	  font-size: 80px;
+	  color: white;
+}
+
+nav {
+	  background-color: red;
+	  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: red;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #cc0000;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #333333;
+    padding: 20px;
+}
+
+</style>
+
+</html>
